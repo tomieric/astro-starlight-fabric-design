@@ -45,7 +45,7 @@ const Comments = () => {
           repo="tomieric/astro-starlight-fabric-design"
           repoId="R_kgDOLiXAaw"
           category="Announcements"
-          categoryId="DIC_kwDOLgl_x84CeBtj"
+          categoryId="DIC_kwDOLiXAa84CeEkP"
           mapping="pathname"
           reactionsEnabled="1"
           emitMetadata="0"
