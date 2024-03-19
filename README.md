@@ -3,7 +3,7 @@
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
 ```shell
-git clone https://github.com/tomieric/astro-starlight-fabric-design
+npx degit 'tomieric/astro-starlight-fabric-design'
 ```
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/tomieric/astro-starlight-fabric-design/tree/main)
