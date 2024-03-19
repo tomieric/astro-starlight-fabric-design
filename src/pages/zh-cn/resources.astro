@@ -1,0 +1,27 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro'
+import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+---
+
+<StarlightPage frontmatter={{title: '资源', template: 'splash'}}>
+  <CardGrid>
+    <LinkCard
+      title="⚡️ Sketch"
+      description="设计规范-Sketch源文件"
+      href="https://fabric-design-docs.vercel.app/"
+      target={'_blank'}
+    />
+    <LinkCard
+      title="🧩 2D"
+      description="纺织业插画元素"
+      href="https://fabric-design-docs.vercel.app/"
+      target={'_blank'}
+    />
+    <LinkCard
+      title="🧊 3D"
+      description="三维纺织行业元素"
+      href="https://fabric-design-docs.vercel.app/"
+      target={'_blank'}
+    />
+  </CardGrid>
+</StarlightPage>

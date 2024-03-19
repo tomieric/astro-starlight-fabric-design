@@ -1,0 +1,65 @@
+---
+interface Props {
+  title: string
+  icon: string
+  url?: string
+}
+
+const { title, url, icon } = Astro.props
+---
+
+<div class="
+    feature-item
+    no-content
+    flex flex-col items-center justify-center 
+    bg-zinc-800 
+    rounded 
+    hover:shadow-lg
+    hover:bg-zinc-700
+    cursor-pointer
+    aspect-square
+    py-4
+  "
+  style="margin-top:0"
+>
+  {
+    url && <a href={url} class="no-underline text-center hover:text-indigo-700">
+        <div class={['icon', icon].join(' ')}></div>
+        <div style="margin-top: 0.25rem">{title}</div>   
+      </a>
+  }
+  {
+    !url && (<div class={['icon', icon].join(' ')}></div>
+        <div style="margin-top: 0.25rem">{title}</div>)   
+  }
+</div>
+
+<style>
+  .feature-item:hover .icon {
+    transition-duration: .32s;
+    background-position: 0 -1200px;
+  }
+  .icon {
+    width: 120px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: 120px auto;
+    background-position: 0 0;
+    transition: background 0s steps(10, end);
+  }
+  .icon.s1 {
+    background-image: url(../assets/s1.png);
+  }
+  .icon.s2 {
+    background-image: url(../assets/s2.png);
+  }
+  .icon.s3 {
+    background-image: url(../assets/s3.png);
+  }
+  .icon.s4 {
+    background-image: url(../assets/s4.png);
+  }
+  .icon.s5 {
+    background-image: url(../assets/s5.png);
+  }
+</style>
